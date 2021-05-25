@@ -1,4 +1,4 @@
-const IMAGES = 'IMAGES'
+const IMAGES = 'IMAGES';
 
 module.exports = {
   IMAGES

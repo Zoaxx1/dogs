@@ -1,11 +1,11 @@
 const services = require('./service')
 
-const searchPhoto = async (req, res) => {
+const searchImages = async (req, res) => {
   const { query: { query, page = 1, size = 10 } } = req;
-  const photos = await services.searchPhoto(query, page, size);
-  res.status(200).send(photos);
+  const images = await services.searchImages(query, page, size);
+  res.status(200).send(images);
 }
 
 module.exports = {
-  searchPhoto
+  searchImages
 }

@@ -1,38 +1,38 @@
 const axios = require('axios');
 const baseUrl = process.env.UNSPLASH_API;
-const accessKey = process.env.ACCESS_KEY
+const accessKey = process.env.ACCESS_KEY;
 
-const getPhotos = async (page, size) => {
+const getImages = async (page, size) => {
   const url = `${baseUrl}/photos?client_id=${accessKey}&page=${page}&per_page=${size}`;
-  const { data } = await axios.get(url)
+  const { data } = await axios.get(url);
   const images = data ? data.map((image) => {
     return {
       id: image.id,
-      url: image.urls.full
+      url: image.urls.small
     }
-  }) : []
+  }) : [];
   return images; 
 }
 
-const searchPhotos = async (query, page, size) => {
+const searchImagesByQuery = async (query, page, size) => {
   const url = `${baseUrl}/search/photos?client_id=${accessKey}&query=${query}&page=${page}&per_page=${size}`;
-    const { data } = await axios.get(url)
+    const { data } = await axios.get(url);
     const images = data && data.results ? data.results.map((image) => {
       return {
         id: image.id,
-        url: image.urls.full
+        url: image.urls.small
       }
-    }) : []
-    return images
+    }) : [];
+    return images;
 }
 
-const searchPhoto = async (query, page, size) => {
+const searchImages = async (query, page, size) => {
   if (!!query) {
-    return searchPhotos(query, page, size)
+    return searchImagesByQuery(query, page, size);
   }
-  return getPhotos(page, size)  
+  return getImages(page, size);
 }
 
 module.exports = {
-  searchPhoto
+  searchImages
 }
