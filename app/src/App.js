@@ -16,9 +16,9 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-blue-200 w-screen h-screen">
+    <div className="bg-blue-200 w-screen h-screen" >
       <NavBar set={setScreen} />
-      <div className="p-4">{screen.search ? <SearchImgs /> : <SaveImgs />}</div>
+      <div>{screen.search ? <SearchImgs /> : <SaveImgs />}</div>
     </div>
   );
 }
