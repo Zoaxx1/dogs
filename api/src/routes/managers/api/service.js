@@ -1,5 +1,6 @@
 const axios = require('axios');
 const baseUrl = process.env.UNSPLASH_API;
+const accessKey = process.env.ACCESS_KEY
 
 const getPhotos = async (page, size) => {
   const url = `${baseUrl}/photos?client_id=${accessKey}&page=${page}&per_page=${size}`;
@@ -27,9 +28,9 @@ const searchPhotos = async (query, page, size) => {
 
 const searchPhoto = async (query, page, size) => {
   if (!!query) {
-    searchPhotos(query, page, size)
+    return searchPhotos(query, page, size)
   }
-  getPhotos(page, size)  
+  return getPhotos(page, size)  
 }
 
 module.exports = {

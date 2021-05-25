@@ -1,8 +1,7 @@
 const { Router } = require('express');
 const { getRedis, setRedis } = require('../redis')
 const { IMAGE } = require('../redis/keys')
-const accessKey = process.env.ACCESS_KEY
-const { searchPhoto } = require('./managers/api/controller')
+const { searchPhoto } = require('./managers/api/controller');
 
 const app = Router();
 
