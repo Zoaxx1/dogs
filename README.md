@@ -17,13 +17,13 @@ api (backend):
 
 Linux : 
 
-- https://www.digitalocean.com/community/tutorials/como-instalar-y-proteger-redis-en-ubuntu-18-04-es (Spanish)
+- https://www.digitalocean.com/community/tutorials/como-instalar-y-proteger-redis-en-ubuntu-18-04-es (Español)
 
-- https://phoenixnap.com/kb/install-redis-on-ubuntu-20-04 (English)
+- https://phoenixnap.com/kb/install-redis-on-ubuntu-20-04 (Ingles)
 
 Windows:
 
-- https://riptutorial.com/redis/example/29962/installing-and-running-redis-server-on-windows (English)
+- https://riptutorial.com/redis/example/29962/installing-and-running-redis-server-on-windows (Ingles)
 
 2- Luego podremos ejecutar "npm run dev" y listo! nuestra api estará corriendo en el localhost:3001
 
