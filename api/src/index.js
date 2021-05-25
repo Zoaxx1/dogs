@@ -16,5 +16,4 @@ app.use('/', routes);
 
 app.listen(port, () => {
   console.log(`WisbooAPI running on port ${port}`);
-  console.log(`created by Tomas0011 siganme bebes <3`);
 })
