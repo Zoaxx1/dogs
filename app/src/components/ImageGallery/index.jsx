@@ -20,7 +20,7 @@ const ImageGallery = (props) => {
                 className="absolute top-2 right-2 bg-blue-500 text-base px-2 py-1 text-blue-300 rounded"
               >
                 {" "}
-                Save{" "}
+                Guardar{" "}
               </button>
             )}
             <img
