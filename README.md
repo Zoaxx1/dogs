@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------------------------------------------
 
-WISBOO TEST
+**WISBOO TEST**
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -12,10 +12,9 @@ Y para el frontend: ReactJS (https://es.reactjs.org/) | TailwindsCSS (https://ta
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
+**¿Cómo iniciar el proyecto?**
 
-¿Cómo iniciar el proyecto?
-
-api (backend): 
+**api** (backend): 
 
 1- Primero se necesita instalar redis (https://redis.io/)
 
@@ -29,10 +28,14 @@ Windows:
 
 - https://riptutorial.com/redis/example/29962/installing-and-running-redis-server-on-windows (Ingles)
 
-2- Luego podremos ejecutar "npm run dev" y listo! nuestra api estará corriendo en el localhost:3001
+2- Ejecutar "npm install" para instalar todas las dependencias.
 
-app (frontend):
+3- Luego podremos ejecutar "npm run dev" y listo! nuestra api estará corriendo en el localhost:3001
 
-1- Ejecutar el comando "npm start" y nuestra app se encontrará visible en el localhost:3000.
+**app** (frontend):
+
+1- Ejecutar "npm install" para instalar todas las dependencias.
+
+2- Ejecutar el comando "npm start" y nuestra app se encontrará visible en el localhost:3000.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
