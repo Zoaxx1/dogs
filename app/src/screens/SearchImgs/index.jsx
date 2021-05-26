@@ -8,6 +8,7 @@ const SearchImgs = () => {
 
   const imagesSearch = useSelector((state) => state.searchImages);
 
+  //This is to save the quantity of page
   const [page, setPage] = React.useState(1);
   const [searching, setSearch] = React.useState("");
 
@@ -33,7 +34,10 @@ const SearchImgs = () => {
     <div className="w-full h-full relative bg-blue-200 pb-24 p-8">
       <div className="flex items-center justify-center ">
         <div className="flex absolute top-6">
-          <input className="w-80 h-8 rounded-sm pl-4" onChange={onChangeSearch} />
+          <input
+            className="w-80 h-8 rounded-sm pl-4"
+            onChange={onChangeSearch}
+          />
           <button
             className="bg-blue-500 text-blue-300 p-1 ml-2 rounded-sm"
             onClick={getSearch}

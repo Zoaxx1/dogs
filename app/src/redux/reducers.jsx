@@ -14,15 +14,12 @@ export const rootReducer = (state = initialState, action) => {
       initialState.searchImages = action.payload;
       return state;
     }
+    //GET_NEXT_PAGE is to adding to the array of imgs, other news
     case GET_NEXT_PAGE: {
-      console.log(initialState.searchImages, "state");
-      console.log(action.payload, "action");
       initialState.searchImages = [
         ...initialState.searchImages,
         ...action.payload,
       ];
-
-      console.log(initialState.searchImages, "state");
 
       return state;
     }

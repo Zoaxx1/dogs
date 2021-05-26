@@ -22,13 +22,12 @@ export const postImages = (img) => {
       method: "post",
       url: url + "images",
       data: img,
-    }).then((res) => {
-      console.log(res);
     });
   };
 };
 
 export const getNextPage = (key, page) => {
+  //if the key is undefined...
   const urlSearch = !!key
     ? `${url}images/search?page=${page}&size=6&query=${key}`
     : `${url}images/search?page=${page}&size=6`;
@@ -49,6 +48,7 @@ export const getNextPage = (key, page) => {
 };
 
 export const getImagesSearch = (key, page) => {
+  //if the key is undefined...
   const urlSearch = !!key
     ? `${url}images/search?page=${page}&size=6&query=${key}`
     : `${url}images/search?page=${page}&size=6`;
