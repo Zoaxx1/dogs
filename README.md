@@ -6,6 +6,9 @@ WISBOO TEST
 
 Este proyecto utiliza la api de unsplash(https://unsplash.com/) para traer imagenes donde se mostrará como en una galeria en columnas de 3 imagenes por fila. Por cada petición a la api nos traerá 6 imágenes y al presionar el botón "Ver más" veremos 6 nuevas. Todas las imágenes podremos guardarlas y volver a ver en la pestaña de "Mis imagenes" presionando el boton "Guardar" que se encuentra arriba a la izquierda de la dicha imágen. Y por último la otra propiedad que podemos encontrar es un motor de búsqueda para encontrar las imágenes que nos interesen.
 
+Para el backend se uso: NODEJS (https://nodejs.org/es/) | Express (https://expressjs.com/es/) | Redis (https://redis.io/)
+y para el frontend: ReactJS (https://es.reactjs.org/) | TailwindsCSS (https://tailwindcss.com/)
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 
